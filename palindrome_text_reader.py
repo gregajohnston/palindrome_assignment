@@ -48,7 +48,7 @@ def main():
             break
         content = content.strip("\n")
         print(content, end = ": ")
-        output_result(str(content))
+        output_result(content)
     f.close()
     print("\n")
 
