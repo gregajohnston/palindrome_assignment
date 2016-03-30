@@ -20,31 +20,14 @@ def output_result(user_input):
     else:
         print("NOT palindrome :(")
 
-# def is_palindrome_iterative(user_input):
-#     user_input = remove_input_format(user_input)
-#     counter = 0
-#     test_value = True
-#     while counter < int(len(user_input)/2):
-#         if user_input[counter] != user_input[(counter * -1) - 1]:
-#             test_value = False
-#             break
-#         counter += 1
-#     return test_value
-#
-# def output_result_iterative(user_input):
-#     if is_palindrome_iterative(user_input):
-#         print("You have a palindrome!")
-#     else:
-#         print("You do not have a palindrome :(")
-
 def main():
     print("\n")
     f = open(sys.argv[1])
-    ender = True
-    while ender == True:
+    end_test = True
+    while end_test == True:
         content = f.readline()
         if content == "":
-            ender = False
+            end_test = False
             break
         content = content.strip("\n")
         print(content, end = ": ")
