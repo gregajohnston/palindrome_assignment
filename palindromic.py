@@ -5,7 +5,7 @@ def remove_input_format(user_input):
     return_string = "".join(char for char in user_input if char not in excluded_items and char != " ")
     return return_string.lower()
 
-def is_palindrome_recursive(user_input):
+def is_palindrome(user_input):
     user_input = remove_input_format(user_input)
     if len(user_input) <= 1:
         return True
@@ -13,8 +13,8 @@ def is_palindrome_recursive(user_input):
         return is_palindrome(user_input[1:-1])
     return False
 
-def output_result_recursive(user_input):
-    if is_palindrome_recursive(user_input):
+def output_result(user_input):
+    if is_palindrome(user_input):
         print("You have a palindrome!")
     else:
         print("You do not have a palindrome :(")
