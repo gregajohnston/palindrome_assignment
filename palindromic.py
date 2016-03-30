@@ -38,6 +38,6 @@ def output_result_iterative(user_input):
 
 def main():
     print("\n\nPlease enter some text.")
-    output_result_recursive(input("> "))
+    output_result(input("> "))
 
 main()
